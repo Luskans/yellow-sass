@@ -1,0 +1,11 @@
+{
+  "name": "yellow-sass",
+  "version": "1.0.0",
+  "description": "L'agence Yellow fait appel à votre équipe de création et développement web. Le département créa' a définit les besoins avec le client et une maquette de la page d'accueil a été produite. Votre rôle aujourd'hui en tant que lead intégrateur, est de configurer et mettre en place le projet d'intégration. Vous devrez choisir vos propres outils d'intégration (framework) tout en respectant les recommandations du lead développeur. Le projet devra être intégré au plus prêt de la maquette fournie mais aussi devra adopter une arborscence de fichiers structurée et rangée par type et rôle de fichiers, le département dev-back ne devra pas faire ce travail à votre place !",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/main.scss:./css/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -11850,10 +11850,21 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
 section:nth-child(1) {
   background-image: url("../images/bkg-hero-header.jpg");
   background-size: cover;
-  height: 95vh;
+  height: 95%;
+  padding-bottom: 12rem;
+}
+section:nth-child(1) div:nth-child(1) {
+  padding: 2rem;
 }
 section:nth-child(1) div:nth-child(1) header a img {
   width: 180px;
@@ -11866,12 +11877,15 @@ section:nth-child(1) div:nth-child(1) header ul li a {
 section:nth-child(1) div:nth-child(2) h1, section:nth-child(1) div:nth-child(2) .h1 {
   color: white !important;
   font-size: 6em !important;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 section:nth-child(1) div:nth-child(2) h1 span, section:nth-child(1) div:nth-child(2) .h1 span {
   color: #ffb81c;
 }
 section:nth-child(1) div:nth-child(2) div p {
   color: white !important;
+  padding-bottom: 2rem;
 }
 section:nth-child(1) div:nth-child(2) div div button:nth-child(1) {
   background-color: rgba(0, 0, 0, 0.3);
@@ -11891,15 +11905,291 @@ section:nth-child(1) div:nth-child(2) div div button:nth-child(2) {
   font-size: 1.1em;
 }
 
-section:nth-child(2) div h2, section:nth-child(2) div .h2, section:nth-child(3) div h2, section:nth-child(3) div .h2 {
+.about__title, .about__text {
   color: #545454 !important;
 }
-section:nth-child(2) div div p, section:nth-child(3) div div p {
-  color: #545454;
+.about__title {
+  padding-bottom: 3rem;
 }
 
-section:nth-child(3) {
-  background-color: rgb(242, 242, 242);
+.projects {
+  height: 20%;
+  background-color: #fbfbfb;
+  background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(240, 240, 240, 0.5) 1px, rgba(240, 240, 240, 0.5) 8px);
+}
+.projects__title, .projects__text {
+  color: #545454 !important;
+}
+
+.gallery {
+  height: 49%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.gallery__card {
+  width: 100%;
+}
+.gallery__card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.testimonials {
+  height: 60%;
+  background-image: url("../images/bkg-testimonial.jpg");
+  background-size: cover;
+}
+.testimonials__avatar {
+  border-radius: 50%;
+}
+.testimonials__blocText {
+  background-color: #6a4d8a;
+  padding: 50px 40px;
+  position: relative;
+}
+.testimonials__blocText:after {
+  content: "";
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #6a4d8a;
+  position: absolute;
+  top: 100%;
+  left: 45%;
+}
+.testimonials__text, .testimonials__name, .testimonials__title {
+  color: white !important;
+}
+.testimonials__name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.testimonials__caroussel {
+  display: flex;
+  gap: 10px;
+}
+.testimonials__caroussel div {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+}
+.testimonials__caroussel--border {
+  border: 2px solid white;
+  background-color: transparent !important;
+}
+
+.services__title {
+  color: #545454;
+  font-size: 3em;
+  font-weight: bold;
+}
+.services__text {
+  color: #878787;
+  font-size: 1.1em;
+}
+.services__card img {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+.services__card--red img {
+  filter: invert(78%) sepia(66%) saturate(1269%) hue-rotate(307deg) brightness(91%) contrast(109%);
+}
+.services__card--red h3, .services__card--red .h3 {
+  color: #f18b6d !important;
+  font-weight: bold;
+}
+.services__card--red p {
+  color: #878787;
+  font-size: 1.1em;
+}
+.services__card--yellow img {
+  filter: invert(83%) sepia(17%) saturate(3196%) hue-rotate(340deg) brightness(100%) contrast(103%);
+}
+.services__card--yellow h3, .services__card--yellow .h3 {
+  color: #ffb81c !important;
+  font-weight: bold;
+}
+.services__card--yellow p {
+  color: #878787;
+  font-size: 1.1em;
+}
+.services__card--purple img {
+  filter: invert(32%) sepia(14%) saturate(1907%) hue-rotate(226deg) brightness(95%) contrast(84%);
+}
+.services__card--purple h3, .services__card--purple .h3 {
+  color: #6a4d8a !important;
+  font-weight: bold;
+}
+.services__card--purple p {
+  color: #878787;
+  font-size: 1.1em;
+}
+
+.latestNews {
+  background-color: #222f36;
+}
+.latestNews__header h2, .latestNews__header .h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+}
+.latestNews__header p {
+  color: #878787;
+  font-size: 1.1em;
+}
+.latestNews__header div {
+  background-color: #ffb81c;
+  border-radius: 5px;
+  width: 160px;
+  height: 60px;
+}
+.latestNews__header div p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.latestNews__header button {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+}
+.latestNews__cards > div {
+  background-color: white;
+  width: 100%;
+}
+.latestNews__cards > div img {
+  width: 100%;
+}
+.latestNews__cards > div div {
+  padding: 40px;
+}
+.latestNews__cards > div div h3, .latestNews__cards > div div .h3 {
+  font-weight: bold;
+  color: #545454;
+}
+.latestNews__cards > div div > p {
+  color: #878787;
+  font-size: 1.1em;
+}
+.latestNews__cards > div div a p {
+  color: #ffb81c;
+  font-size: 1.2em;
+}
+
+.numbers {
+  background: url("../images/bkg-counter.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.numbers__card {
+  width: 100%;
+  color: white;
+}
+.numbers__card--border {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+@media screen and (max-width: 600px) {
+  .numbers__card--border {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+}
+.numbers__card p:first-child {
+  font-weight: bold;
+  font-size: 5em;
+}
+.numbers__card p:last-child {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.contactUs__title {
+  font-weight: bold;
+  color: #545454;
+}
+.contactUs__contacts {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .contactUs__contacts div {
+    margin: 20px 0 20px 0;
+  }
+}
+.contactUs > div {
+  width: 100%;
+}
+.contactUs > div p:first-child {
+  color: #ffb81c;
+  padding-right: 30px;
+  border-right: 1px solid #d4d4d4;
+  font-size: 1.1em;
+}
+.contactUs > div p:last-child {
+  color: #878787;
+  font-size: 1.1em;
+}
+.contactUs svg {
+  fill: #878787;
+}
+.contactUs__form {
+  color: #878787;
+  width: 100%;
+}
+.contactUs__form > div:first-child div {
+  width: 100%;
+}
+.contactUs__form button {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  width: 160px;
+  height: 50px;
+  border-radius: 5px;
+  align-self: flex-end;
+}
+.contactUs__form input, .contactUs__form textarea {
+  border: 1px solid #e0e0e0;
+  background-color: #fcfcfc;
+}
+.contactUs__form textarea {
+  height: 250px;
+}
+
+.footer {
+  background-color: #212121;
+}
+.footer .container {
+  gap: 120px;
+}
+.footer__card h3, .footer__card .h3 {
+  color: white;
+  font-weight: bold;
+}
+.footer__card li {
+  color: #878787;
+  list-style-type: none;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  margin-left: -30px;
+}
+
+.subFooter {
+  background-color: #191919;
+  font-size: 1.1em;
+}
+.subFooter p {
+  color: #878787;
+}
+.subFooter span {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

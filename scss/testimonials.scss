@@ -1,0 +1,51 @@
+.testimonials {
+    height: 60%;
+    background-image: url("../images/bkg-testimonial.jpg");
+    background-size: cover;
+
+    &__avatar {
+        border-radius: 50%;
+    }
+
+    &__blocText {
+        background-color: $tertiary;
+        padding: 50px 40px;
+        position: relative;
+        &:after {
+            content: "";
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 25px solid $tertiary;
+            position: absolute;
+            top: 100%;
+            left: 45%;
+        }
+    }
+
+    &__text, &__name, &__title {
+        color: white !important;
+    }
+
+    &__name {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+
+    &__caroussel {
+        display: flex;
+        gap: 10px;
+        & div {
+            background-color: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50px;
+            
+        }
+        &--border {
+            border: 2px solid white;
+            background-color: transparent !important;
+        }
+        
+    }
+}

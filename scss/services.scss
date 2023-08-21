@@ -1,0 +1,59 @@
+.services {
+    &__title {
+        color: $secondary;
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    &__text {
+        color: lighten($secondary, 20%);
+        font-size: 1.1em;
+    }
+
+    &__card {
+        img {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+        }
+        &--red {
+            & img {
+                filter: invert(78%) sepia(66%) saturate(1269%) hue-rotate(307deg) brightness(91%) contrast(109%);;
+            }
+            & h3 {
+                color: $servicesColor !important;
+                font-weight: bold;
+            }
+            & p {
+                color: lighten($secondary, 20%);
+                font-size: 1.1em;
+            }
+        }
+        &--yellow {
+            & img {
+                filter: invert(83%) sepia(17%) saturate(3196%) hue-rotate(340deg) brightness(100%) contrast(103%);
+            }
+            & h3 {
+                color: $primary !important;
+                font-weight: bold;
+            }
+            & p {
+                color: lighten($secondary, 20%);
+                font-size: 1.1em;
+            }
+        }
+        &--purple {
+            & img {
+                filter: invert(32%) sepia(14%) saturate(1907%) hue-rotate(226deg) brightness(95%) contrast(84%);
+            }
+            & h3 {
+                color: $tertiary !important;
+                font-weight: bold;
+            }
+            & p {
+                color: lighten($secondary, 20%);
+                font-size: 1.1em;
+            }
+        }
+    }
+}

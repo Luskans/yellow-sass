@@ -1,0 +1,13 @@
+.gallery {
+    height: 49%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    &__card {
+        width: 100%;
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

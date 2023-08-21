@@ -1,0 +1,61 @@
+section:nth-child(1) {
+    background-image: url("../images/bkg-hero-header.jpg");
+    background-size: cover;
+    height: 95%;
+    padding-bottom: 12rem;
+    & div:nth-child(1) {
+        padding: 2rem;
+        & header {
+            & a {
+                & img {
+                    width: 180px;
+                }
+            }
+            & ul {
+                & li {
+                    & a {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+    }
+    & div:nth-child(2) {
+        & h1 {
+            color: white !important;
+            font-size: 6em !important;
+            padding-bottom: 2rem;
+            padding-top: 4rem;
+            & span {
+                color: $primary;
+            }
+        }
+        & div {
+            & p {
+                color: white !important;
+                padding-bottom: 2rem;
+            }
+            & div {
+                & button:nth-child(1) {
+                    background-color: rgba(0, 0, 0, 0.3);
+                    border: 4px solid white;
+                    border-radius: 3px;
+                    width: 250px;
+                    height: 70px;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                }
+                & button:nth-child(2) {
+                    color: white;
+                    border-radius: 3px;
+                    width: 250px;
+                    height: 70px;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}

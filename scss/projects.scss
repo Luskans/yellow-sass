@@ -1,0 +1,8 @@
+.projects {
+    height: 20%;
+    background-color: #fbfbfb;
+    background-image: repeating-linear-gradient(135deg, transparent, transparent 6px, rgba(240, 240, 240, 0.5) 1px, rgba(240, 240, 240, 0.5) 8px);
+    &__title, &__text {
+        color: $secondary !important;
+    }
+}
